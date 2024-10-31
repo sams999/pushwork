@@ -704,6 +704,10 @@
       width: 90%;
     }
 
+    header {
+      padding-top: 2rem ;
+    }
+
     body {
       text-align: center;
      }
@@ -714,6 +718,7 @@
 
     .hero {
       display: block;
+      padding-top: 10vh;
     }
 
     .hero > section + section {
@@ -847,13 +852,18 @@
 
 }
 
-@media (min-width: 733px) {
-  nav a.gray-btn {
-    margin-top: .4rem;
+@media (min-width: 750px) {
+  header nav ul li a.btn.gray-btn {
+    margin-top: .63rem;
   }
 }
 
 @media (max-width: 650px) {
+  
+  .hero {
+    padding-top: 2rem;
+  }
+  
   header nav, header {
     float: none;
     width: 100%;
@@ -862,12 +872,6 @@
 
   header ul li {
     font-size: .8rem;
-    padding-top: .5rem;
-  }
-
-  header nav ul li:first-child {
-    
-    margin-top: 2rem;
   }
 
   header img {
@@ -921,7 +925,7 @@
   }
 
   nav li {
-    padding: 0 3.5rem;
+    padding: 0 3.2rem;
   }
 
   nav .btn {
