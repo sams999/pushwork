@@ -1,1037 +1,1038 @@
 :root {
-    --dark-blue: #131b2d;
-    --gray: #3b4150;
-    --gray-text: #878f9c;
-    font-size: 62.5%;
-    overflow-x: hidden;
-  }
-  
-  /* Box Model Hack */
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Clear fix hack */
-  .clearfix:after {
-       content: ".";
-       display: block;
-       clear: both;
-       visibility: hidden;
-       line-height: 0;
-       height: 0;
-  }
-  
-  .clear {
-      clear: both;
-  }
-  
-  /******************************************
-  /* BASE STYLES
-  /*******************************************/
- 
-  /*sections with dark blue background color*/
-  header, .hero {
-    background: var(--dark-blue);
-    color: var(--gray-text);
-  }
-  
-  /******************************************
-  /* ADDITIONAL STYLES
-  /*******************************************/
-  body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: #f8f7fb;
-    overflow-x: hidden;
-    min-width: 285px;
-  }
-
-  h1, h2 {
-    font-size: 3.2rem;
-    margin-bottom: 1.6rem;
-  }
-
-  h3 {
-    font-size: 2.4rem;
-  }
-
-  h1, h2, h3 {
-    line-height: 1.2;
-  }
-  
-  h1 {
-  color: #fff;
-  } 
-
-  h2 {
-    color: var(--dark-blue); }
-
-  p {
-    color: var(--gray-text);
-  }
-  
-  h4, h6 {
-    margin: .7rem auto;
-    font-weight: 700;
-  }
-
-  h6 {
-    color: var(--gray);
-  }
-  .how h4 {
-    margin-bottom: 0
-  }
-  
-  .hero p, .design p, .marketing p, .how p {
-    font-size: 1.6rem;
-  }
-
-  .how .small-text {
-    font-size: 1.2rem;
-  }
-
-.how p, .how h3 {
-  margin-bottom: 2.8rem;
+  --dark-blue: #131b2d;
+  --gray: #3b4150;
+  --gray-text: #878f9c;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
-  .hero p, .design > section:first-child  p:last-of-type, .marketing p:last-of-type {
-    margin-bottom: 6.4rem;
-  }
-  
-  header {
-    width: 100%;
-    height: 10vh;
-  }
-    
-  .hero img {
-    width: 100%;
-    min-width: 200px;
-    height: auto;
-    margin: 15% 0 7.5% 0; 
-    padding-right: 1vw;
-  }
-  
-  header nav {
-    float: right;
-    width: 70%;
-    height: 100%;
-  }
-  
-  nav ul {
-    float: right;
-    width: 100%;
-    margin-right: 5vw; 
-  }
-  
-  header nav ul li {
-    float: right;
-    width: 10%;
-    margin: 4vh 0;
-  }
-  
-  header nav ul li:first-of-type {
-    width: auto;
-    margin-top: 2.75vh;
-    border-radius: 5px;
-  }
-  
-  header img {
-    margin: 2.7vh 0 4vh 5vw;  
-    color: var(--gray-text);
-    font-size: 2.5rem;
-    text-align:center;
-    width: 30px;
-    transition: transform .6s ease-in-out;
-  }
-
-  header img:hover {
-    transform: rotate(-720deg);
-}
-  
-  nav a {
-    color: var(--gray-text);
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    color: #fff;
-    font-size: 1.08rem
-  }
-  
-  .hero section:first-of-type {
-    float: left;
-    width: 50%;
-    text-align: left;
-    margin: 7.5% auto;
-    padding-right: 3vw;
-  }
-  
-  
-  .hero section + section {
-    float: left;
-    width: 50%;
-  }
-  
-  
-  .hero, .design, .marketing, .how, .features, .testimonial {
-    line-height: 1.5;
-  }
-  
-  .socials {
-    height: 5vh;
-    padding-right: 1.3vw;
-  }
-  
-  .socials ul {
-    float: right;
-    width: 90%;
-    margin: 30px auto;
-  }
-  
-  .socials ul li {
-    float: right;
-    width: 10%
-  }
-  
-  .socials img {
-     width: 75px; 
-  }
-  
-  span {
-    margin-left: -50px;
-  }
-  
-  .socials { 
-    margin-right: 2vw;
-  }
-  
-  img {
-    border-radius: 5px;
-  }
-
-  .hero, .design, .marketing, .how, .team {
-    padding: 0 5vw;
-  }
-  
-  .design section {
-    float: left;
-  }
-  
-  .design > section, .design section {
-    width: 50%;
-  }
-  
-  section.design-card {
-    float: right;
-    text-align: center;
-    width: 40%;
-    min-width: 150px;
-    margin: 2rem;
-    box-shadow: 0 10px 20px rgba(00,00,00,.3);
-    line-height: 1;
-  }
-  
-  section.design-card img {
-    width: 100%;
-    height: auto;
-  }
-
-  .design-card, .design-card img {
-    border-radius: 3px;
-  }
-  
-  .design-card h4 {
-    padding: 0 10px;
-    margin: 20px 0 8px;
-  }
-
-  .design-card p {
-    margin-bottom: 20px;
-  }
-  
-
-  .design > section:first-child {
-    padding-right: 5vw;
-    padding-top: 5vh;
-  }
-  
-  .design {
-    margin-top: 5vh;
-  }
-
-
-  .marketing > section {
-    margin: 15vh 0 15vh;
-    width: 50%;
-    float: left;
-  }
-
-  .marketing img {
-    width: 100%;
-  }
-
-  .marketing > section:nth-child(2) {
-    padding-left: 5vw;
-    float: right;
-  }
-
-  .how > section:first-of-type {
-    clear: both;
-    margin: 0 auto 10vh;
-    text-align: center;
-  }
-
-  .how section:nth-child(2) img, .how section:nth-child(3) {
-    width: 50%;
-    float: left;
-  }
-
-  .how > section:nth-child(3) {
-    padding-left: 5vw; 
-    width: 40%;
-  }
-
-
-  .how a:last-of-type {
-    display: block;
-    clear: both;
-    margin: 5vh 43% 10vh;
-  }
-
-  .how img:last-of-type {
-    width: 75px;
-  }
-
-  .how img:last-of-type:hover {
-    cursor: pointer;
-  }
-
-  .small-square {
-    float: left;
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--dark-blue);
-    border-radius: 5px;
-  }
-
-  .how .small-square {
-    margin-top: 2px;
-  }
-  
-  .small-square + h4, .small-square + h4 + p {
-    margin-left: 40px;
-  }
-
-  .core {
-    width: 30%;
-    padding-left: 5vw;
-    margin-bottom: 7vh;
-  }
-
-  .features {
-    background: var(--dark-blue);
-    padding: 10vh 0;
-    width: 100%;
-  }
-
-  .feature-card {
-    max-width: 1600px;
-    min-width: 1260px;
-    margin: 0 auto;
-  }
-
-  .feature-card:first-of-type{
-    display: block;
-    width: 100%;
-  }
-
-  .feature-card:first-of-type .cards {
-    float: left;
-  }
-
-  .feature-card:nth-of-type(2) .cards {
-    float: right;
-  }
-
-  
-  @keyframes moveRightToLeft {
-    0% {
-      transform: translateX(10%);
-    }
-    100% {
-      transform: translateX(-20%);
-    }
-  }
-
-  @keyframes moveLeftToRight {
-    0% {
-      transform: translateX(-10%);
-    }
-    100% {
-      transform: translateX(20%);
-    }
-  }
-
-  .feature-card:first-of-type {
-    animation: moveRightToLeft 20s infinite alternate linear;
-  }
-
-  .feature-card:nth-of-type(2) {
-    animation: moveLeftToRight 20s infinite alternate linear;
-  }
-
-
-  .cards {
-    float: left;
-    width: 275px;
-    height: 150px;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: left;
-    background: #fff;
-    margin: 20px;
-  }
-
-  .feature-card .small-square {
-    float: none;
-    margin: 0 0 10px 38px;
-  }
-
-  .view-features {
-    text-align: center;
-  }
-
-  .view-features h4 {
-    vertical-align: middle;
-    margin: 20%;
-  }
-
-  .cards h4 {
-    color: var(--dark-blue);
-  }
-
-  .cards p {
-    color: var(--gray-text);
-  }
-
-  .testimonial {
-   height: 33vh;
-    text-align: center;
-    margin: 10vh auto;
-  }
-
-  .testimonial blockquote {
-    max-width: 600px;
-    width: 80%;
-    font-size: 2rem;
-    margin: 0 auto 10px;
-    color: var(--dark-blue);
-    font-style: oblique;
-  }
-
-  .ceo p, .ceo h4 {
-    font-size: 1.3rem;
-    line-height: 1;
-  }
-
-  .ceo h4 {
-    padding-top: 10px;
-  }
-
-  .ceo img {
-    width: 50px;
-    border-radius: 50%;
-    float: left;
-    margin-right: 10px;
-  }
-
-  .ceo {
-    margin: 0 auto;
-    text-align: left;
-    max-width: 200px;
-    padding-left: 10px;
-  }
-
-  .ceo p{
-    color: var(--gray-text);
-  }
-
-  .relative {
-    position: relative;
-  }
-
-  .relative > a:first-of-type img, .relative > a:nth-of-type(2) img {
-    position: absolute;
-    top: 50%;
-    width: 3rem;
-  }
-
-  .relative > a:first-of-type img {
-    left: 2rem;
-  }
-
-  .relative > a:nth-of-type(2) img {
-    right: 2rem;
-  }
-  
-  .team {
-    width: 100%;
-    height: auto;
-    background: var(--dark-blue);
-    padding: 5% 10% 7%;
-
-  }
-
-
-  .team h3 {
-    color: white;
-  }
-
-  .team p {
-    font-size: 1.2rem;
-    line-height: 2;
-    margin-top: -2rem;
-  }
-
-  .team > section {
-    width: 50%;
-    float: left;
-    margin: 0 auto;
-    background: var(--dark-blue);
-  }
-
-  .team section + section {
-    margin: 0 auto;
-  }
-
-  .team section .gray-btn {
-    margin-right: 2rem;
-  }
-
-  footer {
-    padding: 2rem 5vw 5rem;
-  
-  }
-  footer > section {
-    float: left;
-    width: 12%;
-    margin: 2rem 1rem;
-  }
-
-  footer > section:nth-child(4), footer > section:nth-child(5), footer > section:nth-child(6) {
-    float: right;
-  }
-
-  footer > section:nth-child(3) {
-    padding-top: 2.4rem;
-  }
-
-  footer p{
-    font-size: 1.1rem;
-    line-height: 2;
-  }
-
-  footer > section:first-child > p {
-    line-height: 1.1;
-    margin: 1.2rem 0;
-  }
-
-  footer div {
-    line-height: 3;
-    color: var(--gray-text);
-  }
-
-  footer i {
-    font-size: 1.2rem;
-    padding-right: 5%;
-    margin-top: 1rem;
-  }
-
-  small {
-    font-size: 1;
-    margin-left: -5px;
-  }
-
-  /* buttons */
-  
-  .btn {
-   
-    float: left;
-    margin-right: 10px;
-    background: #fff;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 5px;
-  }
-
-  .btn, .team .gray-btn {
-    width: 150px;
-    height: 30px;
-  }
-
-  .btn:hover, header i:hover, .socials img:hover {
-   transition: transform .3s ease-in-out;
-   transform: scale(1.08);
-  }
-
-  
-  .white-btn:hover {
-    background: var(--gray-text);
-    color: #fff;
-  }
-
- 
-  
-  .blue-btn, blue-btn i {
-    color: #fff;
-    background: var(--dark-blue);
-  }
-  
-  .blue-btn i {
-    float: left;
-    margin: 7px 50px 0 0;
-    font-size: 1.5rem;
-    width: auto;
-    padding-left: 50px;
-  }
-
-  .blue-btn:hover {
-    color: var(--gray-text);
-  }
-
-  .gray-btn {
-    background: var(--gray);
-    width: 100px;
-    height: 30px;
-  }
-
-  .team .gray-btn {
-    color: #fff;
-  }
-
-  .gray-btn:hover {
-    background: var(--gray-text);
-    font-size: 1rem;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: 700;
-    letter-spacing: .1rem;
-    transition: transform .3s ease-in-out;;
-  }
-
-  /*
-    Media Queries 
-  */
-
- 
-
-  @media (max-width: 950px) {
-    .fa-square {
-      display: none;
-    }
-
-    .socials {
-      display: none;
-    }
-
-    .design {
-      display: block;
-      text-align: center;
-    }
-
-    .design > section {
-      display: block;
-      width: 100%;
-    }
-
-    .design > section:first-child p:last-of-type {
-      margin-bottom: 3.2rem;
-    }
-
-    .design > section + section {
-      float: none;
-      padding-right: 10vw;
-    }
-
-    .design .blue-btn {
-      float: none;
-      display: block;
-      margin: 0 auto 5vh;
-    }
-
-    .design-card {
-      float: none;
-      width: 80%;
-      height: auto;
-    }
-
-    .team {
-      height: auto;
-      padding: 5%;
-    }
-
-    .team > section:first-of-type {
-      margin-bottom: 2.4rem;
-    }
-
-    .team > section {
-      float: none;
-      text-align: center;
-      width: 100%
-    }
-
-    .team section .gray-btn {
-      margin: 0 2rem 0 auto;
-    }
-
-    .team .btn {
-      display: inline-block;
-      float: none;
-      margin: 2rem auto;
-      padding: 0;
-    }
-
-  }
-
- 
-
-  @media (max-width: 800px) {
-    header nav {
-      width: 90%;
-    }
-
-    header {
-      padding-top: 2rem ;
-    }
-
-    body {
-      text-align: center;
-     }
-
-     h1, h2 {
-      font-size: 2.4rem;
-     }
-
-    .hero {
-      display: block;
-      padding-top: 10vh;
-    }
-
-    .hero > section + section {
-      float: none;
-      display: block;
-      width: 100%;
-      float: none;
-      text-align: center;
-    }
-
-    .hero > section img {
-      width: 100%;
-      padding: 0 0 5vh;
-      margin: 0;
-    }
-
-    .hero section:first-child, .design > section:first-child, .marketing > section:nth-child(2), .how > section:first-child {
-      text-align: center;
-      width: 90%;
-      margin: 0 auto;
-      padding: 0;
-      float: none;
-    }
-
-    /*new*/
-    .hero section:first-child {
-      padding: 5vh 0 10vh;
-    }
-
-
-   .hero > section:first-child a.btn {
-    display: inline-block;
-    margin: 2rem .5rem 2rem 0; 
-    padding: 0;
-    float: none;
-    
-   }
-
-   .hero > section:first-child a.blue-btn {
-    display: inline-block;
-    float: none;
-    margin: 2rem 0 2rem .5rem;
-  }
-
-   .hero > section:first-child a.blue-btn i{
-        padding: 7px 10px;
-        margin: 0;
-   }
-
-    .btn {
-      float: none;
-      display: inline-block;
-      margin-bottom: 5vh;
-    }
- 
-    .design  {
-      margin: 0 auto 5vh;
-      width: 90vw;
-    }
-
-    .design > section + section {
-      padding-right: 5vw;
-    }
-
-    
-    .hero p, .design > section:first-child p:last-of-type, .marketing p:last-of-type, .how > section img {
-      margin-bottom: 2.4rem;
-    }
-
-  .how, .core {
-    text-align: center;
-    margin: 0 auto;
-  }
-  .how > section + section {
-    width: 200%;
-    clear: both;
-    margin: 0 auto;
-  }
- 
-  .how > section:nth-child(3) {
-    float: none;
-    margin: 0 auto;
-    width: 90%;
-    height: auto;
-  }
-
-
-  .how h4 + p{
-    margin: 0 auto 1rem;
-  }
-
-  .how h4 {
-    margin: 0 auto;
-  }
-
-  .how .small-square {
-    display: none;
-  }
-
-  .how a.btn.blue-btn {
-    margin: 0 auto 10vh;
-  }
-
-  section.how > section{
-    padding-right: 5vw;
-  }
-
-  
-  .marketing > section, .how > section, .marketing img {
-    display: block;
-    width: 100%;
-  }
-
-  .marketing > section {
-    margin: 5vh auto;
-  }
-  .design, .marketing, .how {
-    padding: 0;
-    margin: 5vh auto;
-}
-
-.core {
-  width: 90%;
-  margin-bottom: 7vh;
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
 }
 
-.team section + section {
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/*sections with dark blue background color*/
+header, .hero {
+  background: var(--dark-blue);
+  color: var(--gray-text);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #f8f7fb;
+  overflow-x: hidden;
+  min-width: 285px;
+}
+
+h1, h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+h1 {
+color: #fff;
+} 
+
+h2 {
+  color: var(--dark-blue); }
+
+p {
+  color: var(--gray-text);
+}
+
+h4, h6 {
+  margin: .7rem auto;
+  font-weight: 700;
+}
+
+h6 {
+  color: var(--gray);
+}
+.how h4 {
+  margin-bottom: 0
+}
+
+.hero p, .design p, .marketing p, .how p {
+  font-size: 1.6rem;
+}
+
+.how .small-text {
+  font-size: 1.2rem;
+}
+
+.how p, .how h3 {
+margin-bottom: 2.8rem;
+}
+
+.hero p, .design > section:first-child  p:last-of-type, .marketing p:last-of-type {
+  margin-bottom: 6.4rem;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+}
+  
+.hero img {
+  width: 100%;
+  min-width: 200px;
+  height: auto;
+  margin: 15% 0 7.5% 0; 
+  padding-right: 1vw;
+}
+
+header nav {
+  float: right;
+  width: 70%;
+  height: 100%;
+}
+
+nav ul {
+  float: right;
+  width: 100%;
+  margin-right: 5vw; 
+}
+
+header nav ul li {
+  float: right;
+  width: 10%;
+  margin: 4vh 0;
+}
+
+header nav ul li:first-of-type {
+  width: auto;
+  margin-top: 2.75vh;
+  border-radius: 5px;
+}
+
+header img {
+  margin: 2.7vh 0 4vh 5vw;  
+  color: var(--gray-text);
+  font-size: 2.5rem;
+  text-align:center;
+  width: 30px;
+  transition: transform .6s ease-in-out;
+}
+
+header img:hover {
+  transform: rotate(-720deg);
+}
+
+nav a {
+  color: var(--gray-text);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+  font-size: 1.08rem
+}
+
+.hero section:first-of-type {
+  float: left;
+  width: 50%;
+  text-align: left;
+  margin: 7.5% auto;
+  padding-right: 3vw;
+}
+
+
+.hero section + section {
+  float: left;
+  width: 50%;
+}
+
+
+.hero, .design, .marketing, .how, .features, .testimonial {
+  line-height: 1.5;
+}
+
+.socials {
+  height: 5vh;
+  padding-right: 1.3vw;
+}
+
+.socials ul {
+  float: right;
+  width: 90%;
+  margin: 30px auto;
+}
+
+.socials ul li {
+  float: right;
+  width: 10%
+}
+
+.socials img {
+   width: 75px; 
+}
+
+span {
+  margin-left: -50px;
+}
+
+.socials { 
+  margin-right: 2vw;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.hero, .design, .marketing, .how, .team {
+  padding: 0 5vw;
+}
+
+.design section {
+  float: left;
+}
+
+.design > section, .design section {
+  width: 50%;
+}
+
+section.design-card {
+  float: right;
+  text-align: center;
+  width: 40%;
+  min-width: 150px;
+  margin: 2rem;
+  box-shadow: 0 10px 20px rgba(00,00,00,.3);
+  line-height: 1;
+}
+
+section.design-card img {
+  width: 100%;
+  height: auto;
+}
+
+.design-card, .design-card img {
+  border-radius: 3px;
+}
+
+.design-card h4 {
+  padding: 0 10px;
+  margin: 20px 0 8px;
+}
+
+.design-card p {
+  margin-bottom: 20px;
+}
+
+
+.design > section:first-child {
+  padding-right: 5vw;
+  padding-top: 5vh;
+}
+
+.design {
+  margin-top: 5vh;
+}
+
+
+.marketing > section {
+  margin: 15vh 0 15vh;
+  width: 50%;
+  float: left;
+}
+
+.marketing img {
+  width: 100%;
+}
+
+.marketing > section:nth-child(2) {
+  padding-left: 5vw;
+  float: right;
+}
+
+.how > section:first-of-type {
+  clear: both;
+  margin: 0 auto 10vh;
+  text-align: center;
+}
+
+.how section:nth-child(2) img, .how section:nth-child(3) {
+  width: 50%;
+  float: left;
+}
+
+.how > section:nth-child(3) {
+  padding-left: 5vw; 
+  width: 40%;
+}
+
+
+.how a:last-of-type {
+  display: block;
+  clear: both;
+  margin: 5vh 43% 10vh;
+}
+
+.how img:last-of-type {
+  width: 75px;
+}
+
+.how img:last-of-type:hover {
+  cursor: pointer;
+}
+
+.small-square {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--dark-blue);
+  border-radius: 5px;
+}
+
+.how .small-square {
+  margin-top: 2px;
+}
+
+.small-square + h4, .small-square + h4 + p {
+  margin-left: 40px;
+}
+
+.core {
+  width: 30%;
+  padding-left: 5vw;
+  margin-bottom: 7vh;
+}
+
+.features {
+  background: var(--dark-blue);
+  padding: 10vh 0;
+  width: 100%;
+}
+
+.feature-card {
+  max-width: 1600px;
+  min-width: 1260px;
+  margin: 0 auto;
+}
+
+.feature-card:first-of-type{
+  display: block;
+  width: 100%;
+}
+
+.feature-card:first-of-type .cards {
+  float: left;
+}
+
+.feature-card:nth-of-type(2) .cards {
+  float: right;
+}
+
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(20%);
+  }
+}
+
+.feature-card:first-of-type {
+  animation: moveRightToLeft 20s infinite alternate linear;
+}
+
+.feature-card:nth-of-type(2) {
+  animation: moveLeftToRight 20s infinite alternate linear;
+}
+
+
+.cards {
+  float: left;
+  width: 275px;
+  height: 150px;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+  background: #fff;
+  margin: 20px;
+}
+
+.feature-card .small-square {
+  float: none;
+  margin: 0 0 10px 38px;
+}
+
+.view-features {
+  text-align: center;
+}
+
+.view-features h4 {
+  vertical-align: middle;
+  margin: 20%;
+}
+
+.cards h4 {
+  color: var(--dark-blue);
+}
+
+.cards p {
+  color: var(--gray-text);
+}
+
+.testimonial {
+ height: 33vh;
+  text-align: center;
+  margin: 10vh auto;
+}
+
+.testimonial blockquote {
+  max-width: 600px;
+  width: 80%;
+  font-size: 2rem;
+  margin: 0 auto 10px;
+  color: var(--dark-blue);
+  font-style: oblique;
+}
+
+.ceo p, .ceo h4 {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.ceo h4 {
+  padding-top: 10px;
+}
+
+.ceo img {
+  width: 50px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.ceo {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 200px;
+  padding-left: 10px;
+}
+
+.ceo p{
+  color: var(--gray-text);
+}
+
+.relative {
+  position: relative;
+}
+
+.relative > a:first-of-type img, .relative > a:nth-of-type(2) img {
+  position: absolute;
+  top: 50%;
+  width: 3rem;
+}
+
+.relative > a:first-of-type img {
+  left: 2rem;
+}
+
+.relative > a:nth-of-type(2) img {
+  right: 2rem;
+}
+
+.team {
+  width: 100%;
+  height: auto;
+  background: var(--dark-blue);
+  padding: 5% 10% 7%;
+
+}
+
+
+.team h3 {
+  color: white;
+}
+
+.team p {
+  font-size: 1.2rem;
+  line-height: 2;
   margin-top: -2rem;
 }
 
+.team > section {
+  width: 50%;
+  float: left;
+  margin: 0 auto;
+  background: var(--dark-blue);
 }
 
-@media (min-width: 750px) {
-  header nav ul li a.btn.gray-btn {
-    margin-top: .63rem;
-  }
+.team section + section {
+  margin: 0 auto;
 }
 
-@media (max-width: 650px) {
-  
-  .hero {
-    padding-top: 2rem;
-  }
-  
-  header nav, header {
-    float: none;
-    width: 100%;
-    position: relative;
-  }
+.team section .gray-btn {
+  margin-right: 2rem;
+}
 
-  header ul li {
-    font-size: .8rem;
-  }
+footer {
+  padding: 2rem 5vw 5rem;
 
-  header img {
-    position: absolute;
-    left: 0;
-    z-index: 1;
-  }
+}
+footer > section {
+  float: left;
+  width: 12%;
+  margin: 2rem 1rem;
+}
 
-  .design > section + section {
-    padding-right: 10vw;
-  }
+footer > section:nth-child(4), footer > section:nth-child(5), footer > section:nth-child(6) {
+  float: right;
+}
 
-  .design > section + section .design-card {
-    width: 80%;
-  }
+footer > section:nth-child(3) {
+  padding-top: 2.4rem;
+}
 
-  
+footer p{
+  font-size: 1.1rem;
+  line-height: 2;
+}
 
-  footer {
-    display: block;
-    padding: 0 2vw;
-  }
+footer > section:first-child > p {
+  line-height: 1.1;
+  margin: 1.2rem 0;
+}
 
-  footer section {
-    width: auto;
-  }
+footer div {
+  line-height: 3;
+  color: var(--gray-text);
+}
 
-  footer > section h4, footer > section p {
+footer i {
+  font-size: 1.2rem;
+  padding-right: 5%;
+  margin-top: 1rem;
+}
+
+small {
+  font-size: 1;
+  margin-left: -5px;
+}
+
+/* buttons */
+
+.btn {
+ 
+  float: left;
+  margin-right: 10px;
+  background: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+}
+
+.btn, .team .gray-btn {
+  width: 150px;
+  height: 30px;
+}
+
+.btn:hover, header i:hover, .socials img:hover {
+ transition: transform .3s ease-in-out;
+ transform: scale(1.08);
+}
+
+
+.white-btn:hover {
+  background: var(--gray-text);
+  color: #fff;
+}
+
+
+
+.blue-btn, blue-btn i {
+  color: #fff;
+  background: var(--dark-blue);
+}
+
+.blue-btn i {
+  float: left;
+  margin: 7px 50px 0 0;
+  font-size: 1.5rem;
+  width: auto;
+  padding-left: 50px;
+}
+
+.blue-btn:hover {
+  color: var(--gray-text);
+}
+
+.gray-btn {
+  background: var(--gray);
+  width: 100px;
+  height: 30px;
+}
+
+.team .gray-btn {
+  color: #fff;
+}
+
+.gray-btn:hover {
+  background: var(--gray-text);
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  transition: transform .3s ease-in-out;;
+}
+
+/*
+  Media Queries 
+*/
+
+
+
+@media (max-width: 950px) {
+  .fa-square {
     display: none;
-    float: none;
   }
 
-  footer i {
-    padding: 0 1rem;
-    font-size: 15px;
-  }
-
-}
-
-@media (max-width: 470px) {
-  nav ul li:nth-last-of-type(2), nav ul li:nth-last-of-type(4), nav ul li:nth-last-of-type(5) {
+  .socials {
     display: none;
-  }
-  nav, nav ul, nav ul li {
-    width: 100%
-  }
-
-  nav ul li{
-    display: block;
-    width: 100%;
-  }
-
-  nav li {
-    padding: 0 3.2rem;
-  }
-
-  nav .btn {
-    margin-bottom: 0;
-  }
-
-  .hero section:first-child {
-    padding: 0 0 5vh;
   }
 
   .design {
+    display: block;
+    text-align: center;
+  }
+
+  .design > section {
+    display: block;
     width: 100%;
   }
 
-  section.testimonial.clear {
-    margin: 0 auto;
+  .design > section:first-child p:last-of-type {
+    margin-bottom: 3.2rem;
   }
 
-  .testimonial blockquote {
-    font-size: 1.3rem;
+  .design > section + section {
+    float: none;
+    padding-right: 10vw;
   }
 
-  .testimonial a {
-    display: none;
+  .design .blue-btn {
+    float: none;
+    display: block;
+    margin: 0 auto 5vh;
   }
 
- 
-  .ceo img {
-    display: inherit;
+  .design-card {
+    float: none;
+    width: 80%;
+    height: auto;
   }
 
   .team {
     height: auto;
-  }
-
-  .team section  {
-    width: 100%;
-    margin: 2vh auto;
+    padding: 5%;
   }
 
   .team > section:first-of-type {
     margin-bottom: 2.4rem;
   }
 
-  .team section + section {
-    margin-top: 0;
+  .team > section {
+    float: none;
+    text-align: center;
+    width: 100%
   }
 
   .team section .gray-btn {
-    margin: 0  auto;
+    margin: 0 2rem 0 auto;
   }
 
-
-  nav a.btn.gray-btn {
-    background: none;
-    margin: 0;
-    width:auto;
-    height: 1rem;
-    line-height: 1rem;
+  .team .btn {
+    display: inline-block;
     float: none;
-    padding-top: .85rem;
+    margin: 2rem auto;
+    padding: 0;
   }
 
-  @-moz-document url-prefix() {
-    nav a.btn.gray-btn {
-      padding-top: .825rem;
-    }
+}
+
+
+
+@media (max-width: 800px) {
+  header nav {
+    width: 90%;
   }
+
+  header {
+    padding-top: 2rem ;
+  }
+
+  body {
+    text-align: center;
+   }
+
+   h1, h2 {
+    font-size: 2.4rem;
+   }
+
+  .hero {
+    display: block;
+    padding-top: 10vh;
+  }
+
+  .hero > section + section {
+    float: none;
+    display: block;
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  .hero > section img {
+    width: 100%;
+    padding: 0 0 5vh;
+    margin: 0;
+  }
+
+  .hero section:first-child, .design > section:first-child, .marketing > section:nth-child(2), .how > section:first-child {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    float: none;
+  }
+
+  /*new*/
+  .hero section:first-child {
+    padding: 5vh 0 10vh;
+  }
+
+
+ .hero > section:first-child a.btn {
+  display: inline-block;
+  margin: 2rem .5rem 2rem 0; 
+  padding: 0;
+  float: none;
+  
+ }
+
+ .hero > section:first-child a.blue-btn {
+  display: inline-block;
+  float: none;
+  margin: 2rem 0 2rem .5rem;
+}
+
+ .hero > section:first-child a.blue-btn i{
+      padding: 7px 10px;
+      margin: 0;
+ }
+
+  .btn {
+    float: none;
+    display: inline-block;
+    margin-bottom: 5vh;
+  }
+
+  .design  {
+    margin: 0 auto 5vh;
+    width: 90vw;
+  }
+
+  .design > section + section {
+    padding-right: 5vw;
+  }
+
+  
+  .hero p, .design > section:first-child p:last-of-type, .marketing p:last-of-type, .how > section img {
+    margin-bottom: 2.4rem;
+  }
+
+.how, .core {
+  text-align: center;
+  margin: 0 auto;
+}
+.how > section + section {
+  width: 200%;
+  clear: both;
+  margin: 0 auto;
+}
+
+.how > section:nth-child(3) {
+  float: none;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+}
+
+
+.how h4 + p{
+  margin: 0 auto 1rem;
+}
+
+.how h4 {
+  margin: 0 auto;
+}
+
+.how .small-square {
+  display: none;
+}
+
+.how a.btn.blue-btn {
+  margin: 0 auto 10vh;
+}
+
+section.how > section{
+  padding-right: 5vw;
+}
+
+
+.marketing > section, .how > section, .marketing img {
+  display: block;
+  width: 100%;
+}
+
+.marketing > section {
+  margin: 5vh auto;
+}
+.design, .marketing, .how {
+  padding: 0;
+  margin: 5vh auto;
+}
+
+.core {
+width: 90%;
+margin-bottom: 7vh;
+padding: 0;
+}
+
+.team section + section {
+margin-top: -2rem;
+}
+
+}
+
+
+@media (max-width: 650px) {
+
+.hero {
+  padding-top: 2rem;
+}
+
+header nav, header {
+  float: none;
+  width: 100%;
+  position: relative;
+}
+
+header ul li {
+  font-size: .8rem;
+}
+
+header img {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.design > section + section {
+  padding-right: 10vw;
+}
+
+.design > section + section .design-card {
+  width: 80%;
+}
+
+
+
+footer {
+  display: block;
+  padding: 0 2vw;
+}
+
+footer section {
+  width: auto;
+}
+
+footer > section h4, footer > section p {
+  display: none;
+  float: none;
+}
+
+footer i {
+  padding: 0 1rem;
+  font-size: 15px;
+}
+
+}
+
+@media (max-width: 470px) {
+nav ul li:nth-last-of-type(2), nav ul li:nth-last-of-type(4), nav ul li:nth-last-of-type(5) {
+  display: none;
+}
+nav, nav ul, nav ul li {
+  width: 100%
+}
+
+nav ul li{
+  display: block;
+  width: 100%;
+}
+
+nav li {
+  padding: 0 3.2rem;
+}
+
+nav .btn {
+  margin-bottom: 0;
+}
+
+.hero section:first-child {
+  padding: 0 0 5vh;
+}
+
+.design {
+  width: 100%;
+}
+
+section.testimonial.clear {
+  margin: 0 auto;
+}
+
+.testimonial blockquote {
+  font-size: 1.3rem;
+}
+
+.testimonial a {
+  display: none;
+}
+
+
+.ceo img {
+  display: inherit;
+}
+
+.team {
+  height: auto;
+}
+
+.team section  {
+  width: 100%;
+  margin: 2vh auto;
+}
+
+.team > section:first-of-type {
+  margin-bottom: 2.4rem;
+}
+
+.team section + section {
+  margin-top: 0;
+}
+
+.team section .gray-btn {
+  margin: 0  auto;
+}
+
+
+nav a.btn.gray-btn {
+  background: none;
+  margin: 0;
+  width:auto;
+  height: 1rem;
+  line-height: 1rem;
+  float: none;
+  padding-top: .85rem;
+}
+
+@-moz-document url-prefix() {
+  nav a.btn.gray-btn {
+    padding-top: .825rem;
+  }
+}
 
 }
 
 @media (max-width: 375px) {
-  .hero > section a.btn {
-    width: 120px;
-  }
+.hero > section a.btn {
+  width: 120px;
+}
 }
 
 @media (max-width: 350px) {
-  nav ul li:nth-last-of-type(3) {
-    display: none;
-  }
+nav ul li:nth-last-of-type(3) {
+  display: none;
+}
 }
 
 @media (orientation: landscape) and (hover: none) and (pointer: coarse){
-  /* Styles for landscape mode */
-  nav ul li {
-    padding-top: .5rem;
-  }
+/* Styles for landscape mode */
+nav ul li {
+  padding-top: .5rem;
+}
 
-  nav ul li:first-of-type {
-    padding-bottom: 1rem;
-    padding-top: 0;
-  }
+nav ul li:first-of-type {
+  padding-bottom: 1rem;
+  padding-top: 0;
+}
 
-  .testimonial {
-    margin-bottom: 5rem;
-    height: 50vh;
-  }
+.testimonial {
+  margin-bottom: 5rem;
+  height: 50vh;
+}
 }
 
 @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: 900px) {
-  .testimonial {
-    height: 40vh;
-  }
-
-  .hero img {
-    max-width: 50vw;
-  }
+.testimonial {
+  height: 40vh;
 }
+
+.hero img {
+  max-width: 50vw;
+}
+}
+/* 
+@media (hover: none) and (pointer: coarse) and (min-width: 900px) {
+  header nav ul li:first-of-type a.gray-btn {
+    margin-top: .5rem;
+    }
+} */
