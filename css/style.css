@@ -1009,7 +1009,7 @@
   }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (hover: none) and (pointer: coarse){
   /* Styles for landscape mode */
   nav ul li {
     padding-top: .5rem;
@@ -1023,5 +1023,15 @@
   .testimonial {
     margin-bottom: 5rem;
     height: 50vh;
+  }
+}
+
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: 900px) {
+  .testimonial {
+    height: 40vh;
+  }
+
+  .hero img {
+    max-width: 50vw;
   }
 }
